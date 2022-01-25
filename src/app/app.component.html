@@ -4,6 +4,18 @@
   <router-outlet></router-outlet>
 </div>
 
+<p *appUnless='condition' class='unlelss a'>
+
+  (A) This paragraph is displayed because the condition is false.
+
+</p>
+
+<p *appUnless='!condition' class='unlelss b'>
+
+  (B) Although the condition is true, this paragraph is displayed because appUnless is set to false.
+
+</p>
+
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
